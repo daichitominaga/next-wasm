@@ -1,28 +1,28 @@
 {
   "name": "next-wasm",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:daichitominaga/next-wasm.git",
+  "author": "daichitominaga <daichi.tominaga.1112@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "build:wasm": "wasm-pack build wasm --release --target web",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.5.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "typescript": "^5",
-    "vite": "^4.4.11"
+    "@types/node": "^20.8.5",
+    "@types/react": "^18.2.28",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^13.5.4",
+    "typescript": "^5.2.2",
+    "wasm-pack": "^0.12.1"
   }
 }
